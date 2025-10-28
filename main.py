@@ -6,6 +6,7 @@ def play():
     create_game_board(size)
 
 
+
 if __name__ == "__main__":
     play()
 

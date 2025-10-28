@@ -1,3 +1,4 @@
+from time import sleep
 
 def input_nums() -> tuple[int, int]:
     while True:
@@ -9,3 +10,6 @@ def input_nums() -> tuple[int, int]:
             print("Must have one digit, and the product must be even. and num need > 1")
         except:
             print("Must have one digit, and the product must be even. and num need > 1")
+
+def pause() -> None:
+    sleep(5)
