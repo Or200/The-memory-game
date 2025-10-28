@@ -2,10 +2,10 @@
 def input_nums() -> tuple[int, int]:
     while True:
         try:
-            x_num = int(input("Please write the width number: "))
-            y_num = int(input("Please write the height number: "))
-            if x_num % 2 == 0 and x_num > 1 and y_num % 2 == 0 and y_num > 1:
+            x_num = int(input("Please write the !! height !! number: "))
+            y_num = int(input("Please write the !! width !! number: "))
+            if x_num < 10 and y_num < 10 and (x_num * y_num) % 2 == 0:
                 return x_num, y_num
-            print("the number must be a single digit and a whole number. and need num > 1")
+            print("Must have one digit, and the product must be even. and num need > 1")
         except:
-            print("the number must be a single digit and a whole number. and need num > 1")
+            print("Must have one digit, and the product must be even. and num need > 1")
