@@ -22,7 +22,6 @@ def create_game_board(cord: tuple[int, int]) -> list[list]:
         for whidh in range(cord[1]):
             sub_board.append(cards.pop())
         board.append(sub_board)
-    print(board)
     return board
 
 
