@@ -1,6 +1,5 @@
 from random import sample
 
-
 def create_clear_board(cord: tuple[int, int]) -> list[list]:
     board = []
     for height in range(cord[0]):
@@ -39,16 +38,7 @@ def is_same(work_board: list[list], cord1: tuple[int, int], cord2: tuple[int, in
 def is_frame(cord: int, chr: int) -> bool:
     return cord >= chr
     
-def is_was(cord1: tuple[int, int], cord2: tuple[int, int], cords: set) -> bool:
-    temp_set = set()
-    temp_set.add(cord1)
-    temp_set.add(cord2)
-    cord = temp_set
-    if cord in cords:
-        print(f"Error cord: {cord} it's was")
-        return True
-    else:
-        cords.add(str(cord))
-        return False
+def is_was(cord: tuple[int, int], cords: set) -> bool:
+    return cord in cords
     
-
+    

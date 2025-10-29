@@ -40,13 +40,20 @@ def input_choice(cord: tuple[int, int]) -> tuple[int, int]:
             print("Must have one digit, and the product must be even. and num need > 1")
 
 def pause() -> None:
-    sleep(5)
+    sleep(3)
 
-def print_board():
-    pass
+def print_board(view: list[list]) -> None:
+    my_str = ''
+    for i, v in enumerate(view):
+        my_str += f"{i + 1}. "
+        my_str += f"{v} \n"
+    my_str += "     "
+    for i in range(len(view[0])):
+        my_str += f"{i + 1}.   "
+    print(my_str)
 
 def print_result():
     pass
 
-def log_game():
-    pass
+def time_game(strt, finis):
+    print(f"game time is: {finis - strt}")
